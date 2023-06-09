@@ -12,7 +12,7 @@ def f(im, x, y):
     return True
 
 
-image = cv2.imread("roflan.jpeg")
+image = cv2.imread(input("Введите путь до картинки: "))
 maska = [len(image[0]) * [False] for i in range(len(image))]
 for i in range(len(image)):
     for j in range(len(image[0])):
